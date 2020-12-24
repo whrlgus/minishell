@@ -6,7 +6,7 @@
 /*   By: amin <amin@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/24 09:38:25 by amin              #+#    #+#             */
-/*   Updated: 2020/12/24 11:28:55 by amin             ###   ########.fr       */
+/*   Updated: 2020/12/24 14:25:42 by amin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void	exe_builtin(char **commands, char **envp)
 		printf("=======unset\n");
 	// env
 	if (!ft_strncmp("env", commands[0], 3))
-		printf("=======env\n");
+		command_env(envp);
 	// exit
 	if (!ft_strncmp("exit", commands[0], 4))
 		printf("=======exit\n");
